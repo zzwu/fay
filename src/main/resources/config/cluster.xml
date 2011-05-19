@@ -1,0 +1,25 @@
+<cluster>
+	<!-- The name is just to help users identify this cluster from the gui -->
+	<name>GOTTestCluster</name>
+	<server>
+		<!-- The node id is a unique, sequential id beginning with 0 that identifies 
+			each server in the cluster -->
+		<id>0</id>
+		<host>127.0.0.1</host>
+		<http-port>8081</http-port>
+		<socket-port>6666</socket-port>
+		<admin-port>6667</admin-port>
+		<!-- A list of data partitions assigned to this server -->
+		<partitions>0,1</partitions>
+	</server>
+	<!-- 
+	<server>
+		<id>1</id>
+		<host>vldmt2.prod.linkedin.com</host>
+		<http-port>8081</http-port>
+		<socket-port>6666</socket-port>
+		<admin-port>6667</admin-port>
+		<partitions>4,5,6,7</partitions>
+	</server>
+	 -->
+</cluster>
